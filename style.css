@@ -55,6 +55,24 @@ h3{
     font-size: 1.5em;
 }
 
+.c_details a{
+    color: #43b0af;
+}
+
+.buttons a {
+    background-color: #333;
+    color: #ededed;
+    text-decoration: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #4A0074;
+    color: #fff;
+}
+
 #skill_container{
     display: flex;
     column-gap: 70px;
@@ -116,7 +134,8 @@ h3{
 }
 
 .project a {
-    color: #333;
+    background-color: #333;
+    color: #ededed;
     text-decoration: none;
     border: 1px solid #333;
     padding: 5px 10px;
@@ -124,7 +143,7 @@ h3{
 }
 
 .project a:hover {
-    background-color: #333;
+    background-color: #4A0074;
     color: #fff;
 }
 
