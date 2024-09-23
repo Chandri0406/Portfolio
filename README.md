@@ -1,3 +1,3 @@
 # Portfolio
 
-Hello. Welcome to my CV/portfolio website. 
+Hello, my name is Chandri and welcome to my CV/portfolio website. 
