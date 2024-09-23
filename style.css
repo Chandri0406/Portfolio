@@ -2,19 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0d0217;
+    color: #e6e2e2e7;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    color: #e6e2e2e7;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 3.2em;
 }
 
 header p {
@@ -37,16 +37,71 @@ nav a {
 }
 
 section {
+    height: 100vh;
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #41364a;
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #43b0af;
     padding-bottom: 10px;
+    color: #43b0af;
+    font-size: 1.8em;
+}
+
+h3{
+    color: #18a3b7;
+    font-size: 1.5em;
+}
+
+#skill_container{
+    display: flex;
+    column-gap: 70px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill{
+    display: flex;
+    padding: 50px 0;
+}
+
+.circular_progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#ededed 0deg, #ededed 360deg);
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circular_progress::before{
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: #0d0217;
+}
+
+.progress_value{
+    position: relative;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-top: 105px;
+}
+
+.text{
+    position: relative;
+    padding-top: 60px;
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
 .project {
@@ -77,6 +132,5 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
     color: #fff;
 }
