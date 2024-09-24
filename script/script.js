@@ -11,7 +11,7 @@ function animateProgressBars() {
             progressStartValue++;
 
             progressValue.textContent = `${progressStartValue}%`;
-            circularProgress.style.background = `conic-gradient(#67fff2 ${progressStartValue * 3.6}deg, #ededed 0deg)`;
+            circularProgress.style.background = `conic-gradient(#67fff2 ${progressStartValue * 3.6}deg, #3a3a3a 0deg)`;
 
             if (progressStartValue == progressEndValue) {
                 clearInterval(progress);
@@ -24,7 +24,7 @@ const skillSection = document.querySelector("#skills");
 
 const observerOptions = {
     root: null,
-    threshold: 0.5,
+    threshold: 0.2,
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
