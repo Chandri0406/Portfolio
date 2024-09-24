@@ -166,12 +166,21 @@ h3{
 
 .project a:hover {
     background-color: #4A0074;
+    border-color: #4A0074;
     color: #fff;
+}
+
+.project .icon{
+    width: 30px;
+    float: left;
+    display: inline;
+    padding: 5px;
+    margin-top: -10px;
 }
 
 .slideshow_lms, .slideshow_las, .slideshow_wed, .slideshow_bug {display: none;}
 
-img {
+.slide {
     vertical-align: middle;
     width: 100%;
     height: 100%;
