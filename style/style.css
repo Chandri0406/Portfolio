@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0d0217;
+    background-color: #3d315b;
     color: #e6e2e2e7;
 }
 
@@ -22,38 +22,69 @@ header p {
     font-size: 1.2em;
 }
 
-nav{
-    position: -webkit-sticky;
-    position: sticky;
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
     top: 0;
-    z-index: 1000;
-    background-color: #0d0217;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+.overlay-content {
+position: relative;
+top: 25%; 
+width: 100%;
+text-align: center; 
+margin-top: 30px; 
+}
+  
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block; 
+transition: 0.3s;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.overlay a:hover, .overlay a:focus {
+color: #f1f1f1;
 }
 
-nav a {
-    color: #43b0af;
-    text-decoration: none;
-    font-size: 1.3em;
-    padding: 20px;
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+left: 45px;
+font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
 }
 
-nav a:hover{
-    color: #B131fa;
+#menu {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 section {
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px #41364a;
+    box-shadow: 0 0 10px #9AB87A;
 }
 
 h2 {
@@ -86,8 +117,8 @@ h3{
 }
 
 .buttons a:hover {
-    border-color: #4A0074;
-    background-color: #4A0074;
+    border-color: #9AB87A;
+    background-color: #9AB87A;
     color: #fff;
 }
 
@@ -165,8 +196,8 @@ h3{
 }
 
 .project a:hover {
-    background-color: #4A0074;
-    border-color: #4A0074;
+    background-color: #9AB87A;
+    border-color: #9AB87A;
     color: #fff;
 }
 
@@ -178,7 +209,7 @@ h3{
     margin-top: -10px;
 }
 
-.slideshow_lms, .slideshow_las, .slideshow_wed, .slideshow_bug {display: none;}
+.slideshow_robo, .slideshow_lms, .slideshow_ac, .slideshow_wed, .slideshow_bug, .slideshow_las{display: none;}
 
 .slide {
     vertical-align: middle;
@@ -209,18 +240,12 @@ h3{
     user-select: none;
   }
   
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #fff;
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+color: black;
 }

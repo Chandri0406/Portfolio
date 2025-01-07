@@ -7,35 +7,34 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <span onclick="openMenu()" id="menu">&#9776;</span>
     <header>
         <h1>Chandri Breytenbach</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
+    <div id="Nav" class="overlay">
+        <a class="closebtn" onclick="closeMenu()">&times;</a>
+        <div class="overlay-content">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </div>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello, my name is Chandri Breytenbach and welcome to my portfolio website. I'm currently a third year Bachelor of Information Technolcogy student at Belgium Campus.
+        <p>Hello, my name is Chandri Breytenbach and welcome to my portfolio website. I'm a recent Bachelor of Information Technology graduate student from Belgium Campus.
             I believe that I'm a dependable, diligent, and devoted person with the potential to be a great contribution to any prestigious
             company. Due to my innate curiosity and love of solving problems, I enjoy looking into problems in
             order to identify their underlying causes and put workable solutions in place. My ability to pick
             up new skills quickly and pay close attention to detail are qualities that highlight my capacity
             for rapid learning. I'm a cooperative team player that follows rules and guidelines closely.</p>
 
-        <p>I graduated from the high school HTS Pretoria Tuine in 2020. While I was there, I was a really active kid and so I participated in all available activities to me. 
-            These activities range from sport ones such as netball, softball, and jukskei or in after school ones like the first aid team and light and sound team.</p>
-
         <h3>Contact Details</h3>
         <div>
             <p class="c_details"><b>Address:</b> Gauteng, Pretoria</p>
             <p class="c_details"><b>Email:</b> chan.brey@gmail.com</p>
-            <p class="c_details"><b>Phone:</b> 064 652 6481 </p>
+            <p class="c_details"><b>Phone:</b> (+27)64 652 6481 </p>
             <p class="c_details"><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/chandri-breytenbach-8b4711206/">Chandri Breytenbach</a></p>
         </div>
 
@@ -131,11 +130,11 @@
         <div class="project">
             <h3>Recycle Sorting Robotic Arm</h3>
             <div class="slideContainer">
-                <div class="slideshow_las">
+                <div class="slideshow_robo">
                     <img src="" class="slide">
                 </div>
 
-                <div class="slideshow_las">
+                <div class="slideshow_robo">
                     <img src="" class="slide">
                 </div>
 
@@ -143,8 +142,10 @@
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
 
-            <p></p>
-            <a href="https://github.com/Chandri0406/Loan_App_System" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
+            <p>This was my third-year group project that is about a robotic arm using machine learning to sort through different recyclable materials such as 
+                cardboard, glass, plastic and metal. My role within this project was both a co team leader as well as working on the movements of the robotic 
+                arm and the algorithm for the image detection. This project was done in python language and can be seen on my GitHub profile.</p>
+            <a href="https://github.com/Chandri0406/Recycle_Sorting_Robotic_Arm" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
 
         </div>
 
@@ -210,33 +211,60 @@
 
             <p>This project is a group project that has a login web application using JSP/Servlets to validate users with a PostgreSQL database. 
                 Once a user successfully logs in, they must open a Library Management System as a desktop application that was made using Swing. 
-                This system is used for managing books, authors, borrowers, and loans with CRUD operations also using a PostgreSQL database. My role for this project was team lead, 
-                and I was also in charge of the UI designs for both the GUI swing and the websites. I was also in charge of the database set up with PostgreSQL.</p>
+                This system is used for managing books, authors, borrowers, and loans with CRUD operations also using a PostgreSQL database. My 
+                role for this project was team lead, and I was also in charge of the UI designs for both the GUI swing and the websites. I was 
+                also in charge of the database set up with PostgreSQL.</p>
             <a href="https://github.com/Chandri0406/Library-Management-System" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
         </div>
 
 
         <div class="project">
-            <h3>Project 3</h3>
+            <h3>Apex Care</h3>
 
             <div class="slideContainer">
-                <div class="slideshow_las">
-                    <img src="" class="slide">
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/home.png" class="slide">
                 </div>
 
-                <div class="slideshow_las">
-                    <img src="" class="slide">
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/clientP.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/complaint.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/survey.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/techP.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/agentP.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/detailsClient.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/historyComplaint.png" class="slide">
+                </div>
+
+                <div class="slideshow_ac">
+                    <img src="images/proj_ac/create.png" class="slide">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
             </div>
 
-            <p></p>
-            <a href="https://github.com/Chandri0406/Loan_App_System" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
+            <p>This project is about a non-exsisting company called Apex Care Solutions that is an maintenance service provider that mange</p>
+            <a href="https://github.com/Chandri0406/ApexCare" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
         </div>
-
-        
 
         <div class="project">
             <h3>Wedding Website</h3>
@@ -282,10 +310,10 @@
                 <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
             </div>
 
-            <p>This is a wedding website group project for my first year web programming class. It consists out of details about the couple and the wedding.
-                There are web pages about each of the topics such as the couples backstory, favourite music and vidoes. There are also pages for the wedding, 
-                like the wedding activities, RSVP form, dress code and the wedding's theme. My role was not only team lead but I was also in charge of the photo gallery, 
-                dress code and wedding theme pages.</p>
+            <p>This project was a wedding website group project for my first-year web programming class. This website consists out multiple web pages of details 
+                about the couple and the wedding. These  web pages are about each of the topics such as the couples backstory, favourite music and videos. There 
+                are also pages for the wedding, like the wedding activities, RSVP form, dress code and the wedding's theme. My role was not only team lead but I 
+                was also in charge of the photo gallery, dress code and wedding theme pages.</p>
             <a href="https://github.com/Chandri0406/Wedding_Invitation_Website" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
         </div>
 
@@ -317,13 +345,13 @@
                     <img src="images/proj_bug/ticketpage.png" class="slide">
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
             </div>
 
-            <p>This is a web based bug tracking application. It has basic CRUD operations for tickets and also the capibility to add people and projects.
-                This was a group project for my second year web programming class. My role in this project was to make the forms and the front-end of the bug tracking website. 
-                However I also helped with some of the back-end programming.</p>
+            <p>This is a web-based bug tracking application. It has basic CRUD operations for tickets and also the capability to add people and projects.
+                This was a group project for my second-year web programming class. My role in this project was to make the forms and the front-end of the bug tracking website. 
+                I also helped with some of the back-end programming.</p>
             <a href="https://github.com/Chandri0406/Bug-Tracker" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
         </div>
 
@@ -339,12 +367,12 @@
                     <img src="images/proj_las/displayed.png" class="slide">
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
             </div>
 
             <p>An application that creates an array of five Loans. It prompts the user for the current prime interest rate. Then, in a loop, prompts the user for a loan type and all relevant information for
-                that loan. Afterwards it stores the created Loan objects in an array. When all the data entry is complete, it display all the loans. This was a group project for my second year programming class.</p>
+                that loan. Afterwards it stores the created Loan objects in an array. When all the data entry is complete, it displays all the loans. This was a group project for my second-year programming class.</p>
             <a href="https://github.com/Chandri0406/Loan_App_System" target="_blank">View Project</a><img src="images/icons/github_icon.png" class="icon">
         </div>
 
