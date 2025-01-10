@@ -37,13 +37,15 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 observer.observe(skillSection);
 
-let slideIndex = [1, 1, 1, 1];
-let slideId = ["slideshow_lms", "slideshow_las", "slideshow_wed", "slideshow_bug"];
+let slideIndex = [1, 1, 1, 1, 1, 1];
+let slideId = ["slideshow_lms", "slideshow_roboArm", "slideshow_ac", "slideshow_las", "slideshow_wed", "slideshow_bug"];
 
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
 
 function plusSlides(n, no) {
     showSlides(slideIndex[no] += n, no);
@@ -58,4 +60,12 @@ function showSlides(n, no) {
         slides[i].style.display = "none";
     }
     slides[slideIndex[no]-1].style.display = "block";  
+}
+
+function openMenu() {
+    document.getElementById("Nav").style.width = "30%";
+}
+  
+function closeMenu() {
+document.getElementById("Nav").style.width = "0%";
 }

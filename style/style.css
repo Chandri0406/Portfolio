@@ -209,7 +209,7 @@ h3{
     margin-top: -10px;
 }
 
-.slideshow_robo, .slideshow_lms, .slideshow_ac, .slideshow_wed, .slideshow_bug, .slideshow_las{display: none;}
+.slideshow_lms, .slideshow_roboArm, .slideshow_ac, .slideshow_wed, .slideshow_bug, .slideshow_las{display: none;}
 
 .slide {
     vertical-align: middle;
@@ -218,7 +218,7 @@ h3{
 }
 
 .slideContainer {
-    max-width: 800px;
+    max-width: 900px;
     max-height: 600px;
     position: relative;
     margin: auto;
