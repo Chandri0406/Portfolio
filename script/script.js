@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 observer.observe(skillSection);
 
 let slideIndex = [1, 1, 1, 1, 1, 1];
-let slideId = ["slideshow_lms", "slideshow_roboArm", "slideshow_ac", "slideshow_las", "slideshow_wed", "slideshow_bug"];
+let slideId = ["slideshow_lms", "slideshow_roboArm", "slideshow_ac", "slideshow_wed", "slideshow_bug", "slideshow_las"];
 
 showSlides(1, 0);
 showSlides(1, 1);
